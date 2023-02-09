@@ -1,0 +1,25 @@
+.heart
+    margin: 150px 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__logo
+        display: inline-block
+        margin: 0 25px
+        transform-origin: center center
+        transform: scale(1.2)
+    &__text
+        display: none
+        margin-top: 25px
+        padding: 0 20px
+
+@media (max-width: 764px)
+    .heart
+        &__img
+            display: block
+            width: 80%
+        &__logo
+            transform: scale(1.0)
+        &__text
+            display: block

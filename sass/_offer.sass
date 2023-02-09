@@ -1,0 +1,72 @@
+.offer
+    width: 100%
+    max-width: 1850px
+    margin: 150px auto
+    &__header
+        display: block
+        margin: 0 auto
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 150px
+    &__left
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 50%
+    &__right
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 50%
+    &__list
+        list-style: none
+        margin-top: 25px
+    &__listitem
+        margin-top: 25px
+    &__heart
+        display: block
+        margin-right: 10px
+    &__logo
+        margin: 0 10px
+    &__img
+        display: none
+
+@media (max-width: 1300px)
+    .offer
+        &__inner
+            flex-direction: column
+        &__left
+            width: 100%
+        &__right
+            width: 100%
+        &__img
+            display: block
+            width: 100%
+            margin: 50px 0
+
+@media (max-width: 1050px)
+    .offer
+        &__header
+            width: 90%
+
+@media (max-width: 764px)
+    .offer
+        margin: 50px auto
+        &__inner
+            margin-top: 70px
+        &__heart
+            transform-origin: center center
+            transform: scale(0.7)
+            margin-right: 5px
+        &__logo
+            transform-origin: center center
+            transform: scale(0.7)
+            margin: 0
+        &__list
+            margin-top: 15px
+        &__listitem
+            margin-top: 15px

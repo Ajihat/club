@@ -1,0 +1,20 @@
+.text
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    font-family: 'Celias-Medium'
+    font-weight: 500
+    color: #ed0000
+    font-size: 29px
+    text-transform: uppercase
+    text-align: center
+    line-height: 120%
+    &.text--big
+        font-size: 38px
+
+@media (max-width: 764px)
+    .text
+        font-size: 14px
+        &.text--big
+            font-size: 18px
